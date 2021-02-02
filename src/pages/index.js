@@ -1,5 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import favicon from '../images/favicon.png'
 import App from '../components/App';
 import { headData } from '../mock/data';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -15,6 +16,7 @@ export default () => {
         <title>{title}</title>
         <html lang={lang || 'en'} />
         <meta name="description" content={description} />
+        <link rel="icon" href={favicon} />
       </Helmet>
       <App />
     </>
