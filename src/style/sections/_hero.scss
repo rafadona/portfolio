@@ -13,13 +13,11 @@
   left: 0;
   bottom: 0;
   right: 0;
-  z-index: -1;
+  z-index: 1;
 
   // If you want to set a background image on the hero section, uncomment these with yout custom image
 
-  background: url('/src/images/colunas.png');
-  background-position: center;
-  background-size: cover;
+ 
 
   @include respond(phone) {
     padding: 0rem $default-font-size;
@@ -63,3 +61,11 @@
     }
   }
 }
+
+#hero{
+  // background: url('https://images.pexels.com/photos/364096/pexels-photo-364096.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+  background: url("/src/images/colunas.png");
+  background-position: center;
+  background-size: cover;
+}
+
