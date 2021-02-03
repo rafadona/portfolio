@@ -2,9 +2,9 @@ import { nanoid } from 'nanoid';
 
 // HEAD DATA
 export const headData = {
-  title: 'Rafael Doná', // e.g: 'Name | Developer'
-  lang: 'PTBR', // e.g: en, es, fr, jp
-  description: 'Bem vindo ao meu portfolio', // e.g: Welcome to my website
+  title: 'Rafael Doná | Developer', 
+  lang: 'en',
+  description: 'Bem vindo ao meu portfolio', 
 };
 
 // HERO DATA
@@ -33,7 +33,7 @@ export const projectsData = [
     info: '',
     info2: '',
     url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    repo: 'https://github.com/rafadona', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
@@ -42,7 +42,7 @@ export const projectsData = [
     info: '',
     info2: '',
     url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    repo: 'https://github.com/rafadona', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
@@ -51,7 +51,7 @@ export const projectsData = [
     info: 'teste',
     info2: '',
     url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    repo: 'https://github.com/rafadona', // if no repo, the button will not show up
   },
 ];
 
