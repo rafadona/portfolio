@@ -11,7 +11,8 @@
   --fw-reg: 300;
   --fw-bold: 900;
 
-  --clr-light: #fff;
+  /* --clr-light: #fff; */
+  --clr-light: rgb(150, 106, 106);
   --clr-dark: #303030;
   --clr-accent: #16e0bd;
 
@@ -69,7 +70,8 @@ strong {
 /* Buttons */
 
 .btn,
-.btn__portfolio {
+.btn__portfolio,
+.btn__about-me {
   display: inline-block;
   padding: 0.5em 2.5em;
   background: var(--clr-accent);
@@ -84,7 +86,8 @@ strong {
 }
 
 .btn:hover,
-.btn__portfolio:hover {
+.btn__portfolio:hover,
+.btn__about-me:hover {
   transform: scale(1.1);
 }
 
@@ -131,7 +134,6 @@ h3 {
   padding: 0.25em 1em;
   font-family: var(--ff-secondary);
   margin-bottom: 1em;
-  text-align: center;
 }
 
 .section__subtitle--work {
@@ -161,6 +163,7 @@ header {
   left: 0;
   right: 0;
   z-index: 100;
+
   transform: translateX(100%);
   transition: transform 250ms cubic-bezier(0.5, 0, 0.5, 1);
 }
@@ -259,22 +262,36 @@ header {
 }
 
 .section__subtitle--intro {
-  /* display: inline-block; */
-  margin: 0 auto;
-  /* width: 80%; */
+  display: inline-block;
 }
 
 @media (min-width: 600px) {
   .intro {
-    text-align: center;
+    display: grid;
+    width: min-content;
     margin: 0 auto;
     grid-column-gap: 1em;
+    grid-template-areas:
+      "img title"
+      "img subtitle";
+    grid-template-columns: min-content max-content;
+  }
+
+  .intro__img {
+    grid-area: img;
+    min-width: 250px;
+    position: relative;
+    z-index: 2;
   }
 
   .section__subtitle--intro {
-    text-align: center;
+    align-self: start;
+    grid-column: -1 / 1;
+    grid-row: 2;
+    text-align: right;
     position: relative;
-    width: 80%;
+    left: -1.5em;
+    width: calc(100% + 1.5em);
   }
 }
 
@@ -377,9 +394,8 @@ header {
 
 .portfolio {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5em;
-  /* border: yellow solid; */
 }
 
 .portfolio__item {
@@ -479,6 +495,16 @@ header {
     flex-direction: column;
     gap: 1rem;
   }
+  .about-me__btn {
+    /* margin-top: 1rem; */
+    text-align: center;
+    margin: 1rem auto;
+  }
+
+  .section__subtitle--intro {
+    display: block;
+    text-align: center;
+  }
 }
 
 .container__btn {
@@ -527,4 +553,5 @@ header {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   white-space: nowrap;
+  text-align: left;
 }
