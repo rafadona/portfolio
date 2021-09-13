@@ -11,10 +11,11 @@
   --fw-reg: 300;
   --fw-bold: 900;
 
-  /* --clr-light: #fff; */
-  --clr-light: rgb(150, 106, 106);
+  --clr-light: #fff;
+  /* --clr-light: rgb(150, 106, 106); */
   --clr-dark: #303030;
   --clr-accent: #16e0bd;
+  --clr-background: rgba(255, 0, 0, 0.4);
 
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
@@ -322,15 +323,27 @@ header {
 }
 
 .services {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
   margin-bottom: 4em;
+  border: white solid 3px;
 }
 
 .service {
   max-width: 500px;
-  margin: 0 auto;
+  min-width: 120px;
+  /* margin: 0 auto; */
+  background-color: var(--clr-background);
+  border-radius: 5%;
 }
 
-@media (min-width: 800px) {
+.icon_service {
+  color: yellow;
+}
+
+/* @media (min-width: 800px) {
   .services {
     display: flex;
     max-width: 1000px;
@@ -339,9 +352,9 @@ header {
   }
 
   .service + .service {
-    margin-left: 2em;
+    margin-left: 1em;
   }
-}
+} */
 
 .about-me {
   max-width: 1000px;
