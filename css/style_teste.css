@@ -15,7 +15,7 @@
   /* --clr-light: rgb(150, 106, 106); */
   --clr-dark: #303030;
   --clr-accent: #16e0bd;
-  --clr-background: rgba(255, 0, 0, 0.4);
+  --clr-background: rgba(63, 62, 62, 0.4);
 
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
@@ -340,7 +340,7 @@ header {
 }
 
 .icon_skill {
-  color: yellow;
+  /* color: yellow; */
 }
 
 /* @media (min-width: 800px) {
