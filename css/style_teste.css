@@ -335,7 +335,7 @@ header {
   max-width: 500px;
   min-width: 120px;
   /* margin: 0 auto; */
-  background-color: var(--clr-background);
+  background: var(--clr-background);
   border-radius: 5%;
 }
 
