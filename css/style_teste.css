@@ -296,7 +296,7 @@ header {
   }
 }
 
-/*  My skills section  */
+/* Conhecimentos  */
 
 .my-skills {
   background-color: var(--clr-dark);
@@ -340,7 +340,15 @@ header {
 }
 
 .icon_skill {
-  /* color: yellow; */
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  max-width: 500px;
+  min-width: 120px;
+
+  /* margin: 0 auto; */
+  background: var(--clr-background);
+  border-radius: 5%;
 }
 
 .about-me {
