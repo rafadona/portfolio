@@ -450,6 +450,9 @@ header {
   color: inherit;
   text-decoration: none;
 }
+.footer h2 {
+  margin-bottom: 1rem;
+}
 
 .footer__link {
   font-weight: var(--fw-bold);
@@ -469,7 +472,7 @@ header {
   list-style: none;
   display: flex;
   justify-content: center;
-  margin: 2em 0 0;
+  /* margin: 2em 0 0; */
   padding: 0;
 }
 
