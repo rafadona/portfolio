@@ -144,7 +144,7 @@ h3 {
   margin-bottom: 1em;
 }
 
-.section__subtitle--work {
+.section__subtitle--projetos {
   color: var(--clr-accent);
   font-weight: var(--fw-bold);
   margin-bottom: 2em;
@@ -407,9 +407,9 @@ header {
   }
 }
 
-/* My Work */
+/* Meus Projetos */
 
-.my-work {
+.meus-projetos {
   background-color: var(--clr-dark);
   color: var(--clr-light);
   text-align: center;
