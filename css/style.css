@@ -310,21 +310,21 @@ header {
 
 /* Conhecimentos  */
 
-.my-skills {
+.meus-conhecimentos {
   background-color: var(--clr-dark);
-  background-image: url(../img/skills-bg.jpg);
+  background-image: url(../img/conhecimentos-bg.jpg);
   background-size: cover;
   background-blend-mode: multiply;
   color: var(--clr-light);
   text-align: center;
 }
 
-.section__title--skills {
+.section__title--conhecimentos {
   color: var(--clr-accent);
   position: relative;
 }
 
-.section__title--skills::after {
+.section__title--conhecimentos::after {
   content: "";
   display: block;
   width: 2em;
@@ -334,7 +334,7 @@ header {
   opacity: 0.25;
 }
 
-.skills {
+.conhecimentos {
   display: flex;
   display: grid;
   grid-template-columns: repeat(4, minmax(150px, 200px));
@@ -345,7 +345,7 @@ header {
   /* border: white solid 3px; */
 }
 
-.skill {
+.conhecimento {
   max-width: 500px;
   min-width: 120px;
   /* margin: 0 auto; */
@@ -353,7 +353,7 @@ header {
   border-radius: 5%;
 }
 
-.icon_skill {
+.icone_conhecimento {
   display: flex;
   flex-direction: column;
   justify-content: stretch;
@@ -531,7 +531,7 @@ header {
   .portfolio {
     grid-template-columns: 1fr;
   }
-  .skills {
+  .conhecimentos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
