@@ -504,13 +504,25 @@ header {
 }
 
 .portfolio-item-individual p {
-  max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+}
+.portfolio-item-individual h3 {
+  text-align: center;
+}
+.portfolio-item-individual ul {
+  padding-inline-start: 20px;
 }
 
 .portfolio-item__img {
   margin: 0 auto;
+}
+.tecnologias_usadas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.tecnologias_usadas li::marker {
+  color: var(--clr-accent);
 }
 
 @media (max-width: 600px) {
@@ -538,6 +550,7 @@ header {
 }
 
 .container__btn {
+  margin-top: 2rem;
   display: flex;
   justify-content: space-evenly;
   text-align: center;
