@@ -56,7 +56,7 @@ function outrosProjetos(Projetos) {
                 <a href=${paginaAtual === "/index.html" ? `../projeto/${projeto.href}.html` : `./${projeto.href}.html`} class="portfolio__item">
                   <img
                     src="../img/portfolio-0${projeto.id}.jpg"
-                    alt=""
+                    alt="${projeto.nome}"
                     class="portfolio__img"
                   />
                 </a>
