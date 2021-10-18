@@ -54,7 +54,7 @@ const Conhecimentos = [
 const conhecimentos = document.querySelector(".conhecimentos");
 
 
-function renderConhecimentos(conhecimentos) {
+function renderConhecimentos(Conhecimentos) {
 
     return `
       ${Conhecimentos.map((conhecimento) => {

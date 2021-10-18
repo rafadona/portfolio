@@ -41,6 +41,11 @@ const Projetos = [
 
 
 const portfolio = document.querySelector(".portfolio");
+const currentPage = location.pathname;
+const sliceCurrentPage = location.pathname.slice(9);
+const locationSplit = location.pathname.slice(9).split(".")[0];
+const outrosFiltrado = Projetos.filter((projeto) => projeto.href != locationSplit);
+
 
 
 function outrosProjetos(Projetos) {
@@ -49,7 +54,7 @@ function outrosProjetos(Projetos) {
     ${Projetos.map((projeto) => {
     return `<div>
               <div class="container">
-                <a href="./${projeto.href}.html" class="portfolio__item">
+                <a href=${currentPage === "/index.html" ? `../projeto/${projeto.href}.html` : `./${projeto.href}.html`} class="portfolio__item">
                   <img
                     src="../img/portfolio-0${projeto.id}.jpg"
                     alt=""
@@ -58,7 +63,7 @@ function outrosProjetos(Projetos) {
                 </a>
               </div>
         
-              <a class="social-list__link btn__portfolio__item" href="./${projeto.href}.html">
+              <a class="social-list__link btn__portfolio__item" href="../projeto/${projeto.href}.html">
                 <i class="fas fa-globe-americas fa-lg">
                   ${projeto.nome}
                 </i>
@@ -68,7 +73,7 @@ function outrosProjetos(Projetos) {
   }).join(``)}`;
 }
 
-portfolio.insertAdjacentHTML("afterbegin", outrosProjetos(Projetos));
+portfolio.insertAdjacentHTML("afterbegin", outrosProjetos(outrosFiltrado));
 
 
 
