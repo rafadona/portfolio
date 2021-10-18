@@ -521,6 +521,11 @@ header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
+.funcionalidades {
+  display: grid;
+  grid-template-columns: repeat(auto, 1fr);
+}
+
 .tecnologias_usadas li::marker {
   color: var(--clr-accent);
 }
