@@ -43,6 +43,7 @@ const Projetos = [
 const portfolio = document.querySelector(".portfolio");
 const paginaAtual = location.pathname;
 const locationSplit = location.pathname.slice(9).split(".")[0];
+const locationSplitLive = location.pathname.slice(9).split(".")[0];
 const outrosFiltrado = Projetos.filter((projeto) => projeto.href != locationSplit);
 
 

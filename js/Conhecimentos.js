@@ -60,7 +60,7 @@ function renderConhecimentos(Conhecimentos) {
       ${Conhecimentos.map((conhecimento) => {
         return `<div class="icone_conhecimento">
         <h3>${conhecimento.nome}</h3>
-        <img src=${conhecimento.img} alt=${conhecimento.nome} />
+        <img src="${conhecimento.img}" alt=${conhecimento.nome} />
     </div>`;
     }).join("")}`;
 }
