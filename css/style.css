@@ -508,7 +508,7 @@ header {
 }
 
 .portfolio-item-individual h3 {
-  border-bottom: solid var(--clr-accent);
+  border-bottom: solid 1px var(--clr-accent);
 }
 .portfolio-item-individual ul {
   padding-inline-start: 20px;
