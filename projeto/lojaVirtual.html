@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/img/favicon/favicon-16x16.png"
+    />
+    <title>Rafael Doná | Loja Virtual</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="../js/index.js"></script>
+    <script defer src="../js/Projetos.js"></script>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="../index.html"><img src="../img/rafadev.png" alt="logo" /></a>
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="../index.html" class="nav__link">Introdução</a>
+          </li>
+          <li class="nav__item">
+            <a href="../index.html#conhecimentos" class="nav__link"
+              >Conhecimentos</a
+            >
+          </li>
+          <li class="nav__item">
+            <a href="../index.html#sobre" class="nav__link">Sobre Mim</a>
+          </li>
+          <li class="nav__item">
+            <a href="../index.html#projetos" class="nav__link">Projetos</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contato" class="nav__link">Contato</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="intro teste_section">
+      <h2 class="section__title section__title--intro">
+        Projeto <strong>Loja Virtual </strong>
+      </h2>
+      <p class="section__subtitle section__subtitle--intro">Ecommerce</p>
+      <img src="../img/portfolio-01.jpg" alt="" class="intro__img" />
+    </section>
+
+    <div class="portfolio-item-individual">
+      <div class="resumo_projeto">
+        <h3>Resumo</h3>
+        <p>
+          Meu primeiro projeto Full Stack, simulando uma Loja Virtual, para
+          colocar em prática meus conhecimentos em tecnologias mais novas.
+        </p>
+      </div>
+
+      <div class="video_demo">
+        <h3>Video de demonstração</h3>
+        <div class="iframe-container">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube-nocookie.com/embed/oQzhA2mZzNU"
+            title="YouTube video player"
+            frameborder="0"
+            allow="clipboard-write; encrypted-media"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+
+      <div>
+        <h3>Tecnologias Usadas</h3>
+        <ul class="tecnologias_usadas">
+          <li>React</li>
+          <li>Firebase</li>
+          <li>Next.js</li>
+          <li>Redux</li>
+          <li>Tailwind CSS</li>
+          <li>RESTful API</li>
+          <li>Autenticação OAuth 2.0</li>
+          <li>Vercel para hospedar</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Desafios do Projeto</h3>
+        <p><strong>1 -</strong> Alimentar o site com produtos.</p>
+        <p>
+            <strong>2 -</strong> Criar componentes Reutilizáveis para cada parte do site. </p>
+        </p>
+        <p><strong>3 -</strong> Usar CSS3 puro seria muito complicado para estilizar todo o site, eu precisava de alguma ferramenta para facilitar todo esse trabalho.</p>
+        <p>
+            <strong>4 -</strong> Gerar dinamicamente uma página para cada produto. </p>
+        </p>
+        <p>
+            <strong>5 -</strong> Implementar algum tipo de autenticação para simular um cenário real. </p>
+        </p>
+        <p>
+          <strong>6 -</strong> Armazenar as informações do pedido finalizado em
+          algum lugar.
+        </p>
+        <p>
+            <strong>7 -</strong> Usar as informações armazenadas no Firebase para criar uma pagina de histórico de pedidos finalizados.
+          </p>
+
+          <p>
+            <strong>8 -</strong> Eu precisava de alguma ferramenta que guardasse os itens no "carrinho" de forma global, podendo acessar essas informações em qualquer componente que eu quisesse.
+          </p>
+
+       
+      </div>
+      <!-- <img
+        class="portfolio-item__img"
+        src="../img/portfolio-details.jpg"
+        alt=""
+      /> -->
+      <div>
+        <h3>Minhas Soluções</h3>
+        <p>
+          <strong>1 -</strong> Decidi usar a
+          <a
+            href="https://fakestoreapi.com"
+            target="_blank"
+            rel="noopener nofererrer"
+            >Fake Store API</a
+          >, uma API em inglês,
+          <strong>para ser a minha fonte de dados dos produtos</strong>.
+        </p>
+        <p>
+          <strong>2 -</strong> Aprendi e coloquei em prática meus conhecimentos em <strong>React</strong> e modulazirei todo o site em pequenos componentes.
+          
+        </p>
+        <p><strong>3 -</strong> Conheci e aprendi a usar a ferramenta Tailwind CSS, que facilitou muito todo o trabalho estético do site.</p>
+        <p>
+          <strong>4 -</strong> Aprendi a usar o <strong>Next.js</strong> primeiramente só para usar a função de <strong>Router e criação de páginas dinâmicas</strong>, no meio do caminho aprendi que o Next.js tinha funções de <strong>otimização de imagens</strong> e também acabei usando esse recurso.
+        </p>
+        <p>
+            <strong>5 -</strong> Implementei a solução de autenticação do Google, <strong>Autenticação OAuth 2.0</strong>.
+          </p>
+          <p>
+            <strong>6 -</strong> Aprendi a implementar o <strong>Firestore Database</strong> para armazenar as informações de cada pedido finalizado.
+          </p>
+          <p>
+            <strong>7 -</strong> Aprendi a buscar as informações de cada pedido finalizado no <strong>Firebase</strong>, e criei uma página <strong>"Meus Pedidos"</strong>.
+          </p>
+          <p>
+            <strong>8 -</strong> Aprendi a usar a ferramenta <strong>Redux</strong> para gerenciar o estado do aplicativo e armazenar globalmente as informações do "carrinho".
+          </p>
+
+      </div>
+
+      <div>
+        <h3>Funcionalidades Aplicativo</h3>
+        <ul class="funcionalidades">
+          <li>Histórico de movimentação do dinheiro</li>
+          <li>Transferir dinheiro entre as contas</li>
+          <li>Pedir "Empréstimo"</li>
+          <li>Login dos Usuários</li>
+          <li>Limite de tempo para cada seção</li>
+          <li>Janela de Feedback</li>
+          <li>"Deletar" conta</li>
+        </ul>
+      </div>
+
+      <img class="portfolio-item__img" src="../img/portfolio-01.jpg" alt="" />
+
+      <!-- botoes link -->
+      <div class="container__btn">
+        <a
+          class="social-list__link btn__portfolio"
+          href="https://github.com/rafadona/ecommerce"
+          target="_blank"
+          rel="noopener nofererrer"
+        >
+          <i class="fab fa-github fa-lg"> código fonte</i>
+        </a>
+
+        <a
+          class="social-list__link btn__portfolio"
+          href="https://ecommerce-rafadona.vercel.app/"
+          target="_blank"
+          rel="noopener nofererrer"
+        >
+          <i class="fas fa-globe-americas fa-lg"> Site do Projeto</i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Outros Projetos -->
+    <section class="meus-projetos" id="projetos">
+      <h2 class="section__title section__title--projetos">Outros Projetos</h2>
+      <div class="portfolio">
+        <!-- Projetos.js -->
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div id="contato">
+        <h2>Entre em Contato:</h2>
+        <a href="mailto:rafa_dona@hotmail.com" class="footer__link"
+          >rafa_dona@hotmail.com</a
+        >
+        <h2>ou</h2>
+        <ul class="social-list">
+          <li class="social-list__item">
+            <a
+              class="social-list__link"
+              href="https://github.com/rafadona"
+              target="_blank"
+              rel="noopener nofererrer"
+            >
+              <i class="fab fa-github fa-3x"></i>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a
+              class="social-list__link"
+              href="https://www.linkedin.com/in/rafael-dona/"
+              target="_blank"
+              rel="noopener nofererrer"
+            >
+              <i class="fab fa-linkedin fa-3x"></i>
+            </a>
+          </li>
+        </ul>
+        <a class="top-page__link" href="#top">Voltar para o topo da página</a>
+      </div>
+    </footer>
+  </body>
+</html>
