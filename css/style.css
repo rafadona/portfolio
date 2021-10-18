@@ -508,7 +508,7 @@ header {
 }
 
 .portfolio-item-individual h3 {
-  /* text-align: center; */
+  border-bottom: solid var(--clr-accent);
 }
 .portfolio-item-individual ul {
   padding-inline-start: 20px;
@@ -524,6 +524,9 @@ header {
 .funcionalidades {
   display: grid;
   grid-template-columns: repeat(auto, 1fr);
+}
+.funcionalidades li::marker {
+  color: var(--clr-accent);
 }
 
 .tecnologias_usadas li::marker {
