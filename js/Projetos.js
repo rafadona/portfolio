@@ -53,7 +53,7 @@ function outrosProjetos(Projetos) {
     ${Projetos.map((projeto) => {
     return `<div>
               <div class="container">
-                <a href=${paginaAtual === "/index.html" ? `../projeto/${projeto.href}.html` : `./${projeto.href}.html`} class="portfolio__item">
+                <a href=${paginaAtual === "/index.html" || "/" ? `../projeto/${projeto.href}.html` : `./${projeto.href}.html`} class="portfolio__item">
                   <img
                     src="../img/portfolio-0${projeto.id}.jpg"
                     alt="${projeto.nome}"
