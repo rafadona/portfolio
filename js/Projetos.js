@@ -41,8 +41,7 @@ const Projetos = [
 
 
 const portfolio = document.querySelector(".portfolio");
-const currentPage = location.pathname;
-const sliceCurrentPage = location.pathname.slice(9);
+const paginaAtual = location.pathname;
 const locationSplit = location.pathname.slice(9).split(".")[0];
 const outrosFiltrado = Projetos.filter((projeto) => projeto.href != locationSplit);
 
@@ -54,7 +53,7 @@ function outrosProjetos(Projetos) {
     ${Projetos.map((projeto) => {
     return `<div>
               <div class="container">
-                <a href=${currentPage === "/index.html" ? `../projeto/${projeto.href}.html` : `./${projeto.href}.html`} class="portfolio__item">
+                <a href=${paginaAtual === "/index.html" ? `../projeto/${projeto.href}.html` : `./${projeto.href}.html`} class="portfolio__item">
                   <img
                     src="../img/portfolio-0${projeto.id}.jpg"
                     alt=""
