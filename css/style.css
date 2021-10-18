@@ -317,6 +317,9 @@ header {
   color: var(--clr-light);
   text-align: center;
 }
+.meus-conhecimentos h3 {
+  margin-bottom: 1rem;
+}
 
 .section__title--conhecimentos {
   color: var(--clr-accent);

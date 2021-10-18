@@ -30,7 +30,7 @@ const Projetos = [
   },
   {
     id: 5,
-    nome: "Portfólio",
+    nome: "Portfólio (Este Site)",
     href: "portfolio",
     site: "https://rafadona.github.io/portfolio/",
     github: "https://github.com/rafadona/portfolio"
