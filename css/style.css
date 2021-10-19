@@ -519,6 +519,7 @@ header {
 
 .portfolio-item__img {
   margin: 0 auto;
+  box-shadow: var(--bs);
 }
 .tecnologias_usadas {
   display: grid;

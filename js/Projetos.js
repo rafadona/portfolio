@@ -4,8 +4,9 @@
 const Projetos = [
   {
     id: 1,
-    href: "asa",
     nome: "Ação Solidária Adventista",
+    href: "asa",
+    img: "../img/asa1.jpg",
     site: "https://asa-indaiatuba-central.vercel.app",
     github: ""
   },
@@ -13,6 +14,7 @@ const Projetos = [
     id: 2,
     nome: "Loja Virtual",
     href: "lojaVirtual",
+    img: "../img/lojaVirtual1.jpg",
     site: "https://ecommerce-rafadona.vercel.app/",
     github: "https://github.com/rafadona/ecommerce"
   },
@@ -21,6 +23,7 @@ const Projetos = [
     id: 3,
     nome: "RAFABANK",
     href: "rafabank",
+    img: "../img/rafabank1.jpg",
     site: "https://rafadona.github.io/rafabank/",
     github: "https://github.com/rafadona/rafabank"
   },
@@ -28,6 +31,7 @@ const Projetos = [
     id: 4,
     nome: "Site de Receitas",
     href: "receitas",
+    img: "../img/receitas1.jpg",
     site: "https://rafael-dona-receitas.vercel.app",
     github: "https://github.com/rafadona/receitas"
   },
@@ -35,6 +39,7 @@ const Projetos = [
     id: 5,
     nome: "Portfólio (Este Site)",
     href: "portfolio",
+    img: "../img/portfolio1.jpg",
     site: "https://rafael-dona.vercel.app",
     github: "https://github.com/rafadona/portfolio"
   },
@@ -60,7 +65,7 @@ function outrosProjetos(Projetos) {
               <div class="container">
                 <a href=${paginaAtual === "/index.html" || "/" ? `../projeto/${projeto.href}.html` : `./${projeto.href}.html`} class="portfolio__item">
                   <img
-                    src="../img/portfolio-0${projeto.id}.jpg"
+                    src="${projeto.img}"
                     alt="${projeto.nome}"
                     class="portfolio__img"
                   />
