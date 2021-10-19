@@ -536,7 +536,7 @@ header {
   color: var(--clr-accent);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 599px) {
   .container__btn {
     flex-direction: column;
     gap: 1rem;

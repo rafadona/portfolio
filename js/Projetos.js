@@ -16,19 +16,20 @@ const Projetos = [
     site: "https://ecommerce-rafadona.vercel.app/",
     github: "https://github.com/rafadona/ecommerce"
   },
+
   {
     id: 3,
-    nome: "Vizualização de Dados",
-    href: "vizuDados",
-    site: "https://ecommerce-rafadona.vercel.app/",
-    github: "https://github.com/rafadona/ecommerce"
-  },
-  {
-    id: 4,
     nome: "RAFABANK",
     href: "rafabank",
     site: "https://rafadona.github.io/rafabank/",
     github: "https://github.com/rafadona/rafabank"
+  },
+  {
+    id: 4,
+    nome: "Site de Receitas",
+    href: "receitas",
+    site: "https://ecommerce-rafadona.vercel.app/",
+    github: "https://github.com/rafadona/ecommerce"
   },
   {
     id: 5,
@@ -37,6 +38,7 @@ const Projetos = [
     site: "https://rafael-dona.vercel.app",
     github: "https://github.com/rafadona/portfolio"
   },
+
 
 ];
 
