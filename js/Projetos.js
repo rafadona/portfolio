@@ -34,7 +34,7 @@ const Projetos = [
     id: 5,
     nome: "Portfólio (Este Site)",
     href: "portfolio",
-    site: "https://rafael-dona-portfolio.vercel.app",
+    site: "https://rafael-dona.vercel.app",
     github: "https://github.com/rafadona/portfolio"
   },
 
