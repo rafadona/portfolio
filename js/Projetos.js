@@ -1,3 +1,5 @@
+// const path = require('path');
+
 
 const Projetos = [
   {
@@ -32,7 +34,7 @@ const Projetos = [
     id: 5,
     nome: "Portfólio (Este Site)",
     href: "portfolio",
-    site: "https://rafadona.github.io/portfolio/",
+    site: "https://rafael-dona-portfolio.vercel.app",
     github: "https://github.com/rafadona/portfolio"
   },
 
