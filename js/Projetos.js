@@ -28,8 +28,8 @@ const Projetos = [
     id: 4,
     nome: "Site de Receitas",
     href: "receitas",
-    site: "https://ecommerce-rafadona.vercel.app/",
-    github: "https://github.com/rafadona/ecommerce"
+    site: "https://rafael-dona-receitas.vercel.app",
+    github: "https://github.com/rafadona/receitas"
   },
   {
     id: 5,
